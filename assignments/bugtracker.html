@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(186, 220, 220);
+        }
+
+        .main {
+            margin: 30px;
+            width: 50%;
+            height: 862px;
+            border: 2px solid rgb(186, 177, 177);
+            
+            background-color: white;
+        }
+
+        :focus {
+            outline: none;
+        }
+
+        label {
+            font-size: 20px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .total-heading {
+            display: flex;
+            border: 2px solid rgb(224, 214, 214);;
+            width: 100%;
+            background-color: rgb(241, 241, 91);
+        }
+
+        .heading h2 {
+            font-size: 35px;
+            margin-top: 15px;
+        }
+
+        .heading h2,
+        p {
+            font-family: sans-serif;
+            font-weight: 400px;
+        }
+
+        img {
+            width: 92px;
+            margin-right: 10px;
+
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: 40% 50%;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        textarea {
+            border: none;
+            border-bottom: 2px solid rgb(176, 173, 173);
+        }
+
+        .inp,
+        select {
+            height: 40px;
+            border: none;
+            border-bottom: 2px solid rgb(176, 173, 173);
+            font-size: 15px;
+            color: rgb(101, 102, 103);
+            border-radius: 10px;
+        }
+
+        select option {
+            font-size: 15px;
+        }
+
+        #information {
+            border: none;
+            border-radius: 20px;
+            border-bottom: 2px solid rgb(176, 173, 173);
+        }
+
+        .radio {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 20px;
+        }
+
+        .browser {
+            padding-left: 40px;
+        }
+
+        span {
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        
+
+        a {
+            text-decoration: none;
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            margin: 46px 357px;
+            cursor: pointer;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="total-heading">
+            <div class="img">
+                <img src="bug.png" alt="">
+            </div>
+            <div class="heading">
+                <h2>BUG TRACKER</h2>
+                <p>Report all bugs</p>
+            </div>
+        </div>
+        <div class="box">
+            <label class="cname" for="title">Bug Title : </label>
+            <input type="text" id="title" class="inp">
+        </div>
+        <div class="box">
+            <label class="cname" for="information">Issue Description : </label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="radio">
+            <div>
+                <label class="browser" for="title">Browser : </label>
+            </div>
+            <div>
+                <input type="radio" name="radio" id="rad"><Span>Chrome</Span><br>
+                <input type="radio" name="radio" id="rad "><Span>Internet Explorer</Span><br>
+                <input type="radio" name="radio" id="rad"><Span>Opera</Span> <br>
+                <input type="radio" name="radio" id="rad"><Span>Firefox</Span> <br>
+                <input type="radio" name="radio" id="rad"><Span>Safari</Span> <br>
+                <input type="radio" name="radio" id="rad"><Span>Others</Span> <br>
+                <input class="inp" type="text" name="" id="">
+            </div>
+        </div>
+        <div class="box">
+            <label class="cname" for="title">Assigned to :</label>
+            <input type="text" id="title" class="inp">
+        </div>
+        <div class="box">
+            <label class="cname" for="title">Priority :</label>
+            <input type="text" id="title" class="inp">
+        </div>
+        <div class="box">
+            <label class="cname" for="logo">Screenshot </label>
+            <input type="file" name="" id="logo">
+        </div>
+        <div class="box">
+            <label class="cname" for="title">Title :</label>
+            <input type="text" id="title" class="inp">
+        </div>
+        <a href="#">Submit</a>
+
+
+    </div>
+</body>
+
+</html>

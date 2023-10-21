@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 50%;
+
+            border: 2px solid rgb(241, 227, 227);
+            margin: 5px;
+            padding: 10px;
+        }
+
+        h2 {
+            font-weight: 100px;
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .personal {
+            border: 2px solid rgb(235, 227, 227);
+            font-size: 30px;
+            padding: 20px;
+            margin: 0;
+        }
+        .info{
+            color: black;
+        }
+
+        h5 {
+            font-size: 18px;
+            margin: 0 0 27px 0;
+        }
+
+        .name {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .frmargin {
+
+            width: 41%;
+        }
+
+        #add {
+            display: block;
+            width: 95%;
+            margin: 20px 0 2px 1px;
+
+        }
+
+        input {
+
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 9px;
+            border-radius: 5px;
+            border: 2px solid rgb(206, 188, 188);
+        }
+
+        .datediv {
+            width: 89%;
+        }
+
+        .date {
+            width: 100%;
+        }
+
+        label {
+            color: rgb(104, 108, 104);
+            display: block;
+        }
+
+        #city {
+            margin: 20px 20px 2px 1px;
+            width: 45%;
+        }
+
+        #state {
+            width: 45%;
+        }
+
+        span {
+            color: rgb(132, 138, 132);
+        }
+
+        .firstlast {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+        h3{
+            color: rgb(65, 61, 61);
+        }
+        .names{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+        .spandiv {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .dob{
+            margin: 0 0 22px 0;
+        }
+        #a,
+        #b {
+            width: 90%;
+            margin-right: 100px;
+        }
+        .first, .last{
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="total-heading">
+            <div class="heading">
+                <h2><b>New Employee Details</b></h2>
+            </div>
+            <div class="para">
+                <p>Please fill out your information below.</p>
+            </div>
+        </div>
+        <div class="personal">
+            <span class="info">Personal information</span>
+        </div>
+        <div class="name">
+            <div class="firstlast">
+                <div>
+                    <h3>Name</h3>
+                </div>
+                <div class="names">
+                    <div>
+                        <input type="text" name="" id="first"><br>
+                        <span>First name</span>
+                    </div>
+                    <div>
+                        <input type="text" name="" id="last"><br>
+                        <span>Last name</span>
+                    </div>
+                </div>
+            </div>
+            <div class="datediv">
+                <h3 class="dob">Date of birth</h3>
+                <input type="month" class="date">
+            </div>
+        </div>
+        <div>
+            <h3>Address</h3>
+            <input type="text" name="" id="add">
+            <label>street address 1</label>
+
+            <input type="text" name="" id="add">
+            <label>street address 2</label>
+            <div class="spandiv">
+                <div>
+                    <input type="text" name="" id="a">
+                    <span>State</span>
+                </div>
+                <div>
+                    <input type="text" name="" id="b">
+                    <span>City</span>
+                </div>
+            </div>
+            <input type="text" name="" id="add">
+            <label>Postal code</label>
+
+        </div>
+
+</body>
+
+</html>

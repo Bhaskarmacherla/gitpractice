@@ -1,0 +1,287 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.logo {
+    margin: 7px 0px 24px 3px;
+    height: 25px;
+
+}
+
+ul {
+    display: flex;
+
+}
+
+ul li {
+
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/*section part*/
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 20px;
+    height: 600px;
+}
+
+* {
+    font-family: 'Bree serif', serif;
+}
+
+.form-group {
+    width: 82%;
+}
+
+#home:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 0.8;
+    background: url("bg.png") no-repeat center center/cover;
+    height: 95%;
+    width: 100%;
+    display: block;
+}
+
+#home h1,
+p {
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.primarytext {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.btn {
+    padding: 10px 50px;
+    border: 2px solid rgb(145, 141, 141);
+    background-color: rgb(121, 219, 112);
+    margin: 15px;
+    font-size: large;
+    color: black;
+    border-radius: 5px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.btnn {
+    padding: 10px 50px;
+    border: 2px solid rgb(145, 141, 141);
+    background-color: rgb(121, 219, 112);
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: large;
+    color: black;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btnn:hover {
+    color: white;
+    background-color: rgb(81, 76, 76);
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(81, 76, 76);
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+
+}
+
+.h-secondary {
+    font-size: 2.8rem;
+    padding: 10px;
+}
+
+#services {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#services .box1 img {
+    height: 170px;
+    margin: auto;
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+#services .box1 {
+    border: 2px solid rgb(206, 181, 181);
+    padding: 40px;
+    margin: 3px 45px;
+    background-color: rgb(241, 234, 234);
+    border-radius: 23px;
+    transition: all 0.2s;
+}
+
+#services .box1:hover {
+    background-color: rgb(218, 224, 218);
+    color: green;
+
+}
+
+#services .box1 img {
+    height: 170px;
+    margin: auto;
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+#service-container {
+    background-color: rgb(232, 216, 216);
+}
+
+#client-section {
+    height: 250px;
+    border: 2px solid rgb(223, 212, 212);
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(228, 237, 237);
+    width: 100%;
+    height: 36%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.client-item:hover {
+    background-color: rgb(200, 246, 200);
+    border-radius: 80px;
+}
+
+.client-item img {
+    height: 80px;
+    border-radius: 40px;
+}
+
+.primary {
+    font-size: 65px;
+}
+
+#contact {
+    position: relative;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+#contact::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background-color: rgb(195, 185, 185);
+}
+
+.form-group {
+    width: 20%;
+}
+
+.contact-box input,
+textarea {
+    padding: 0.5rem;
+    width: 150%;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid rgb(211, 192, 192);
+    margin-bottom: 10px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.contact-box label,
+input {
+    font-size: 20px;
+
+}

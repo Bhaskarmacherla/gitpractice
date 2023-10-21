@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(67, 232, 127);
+            
+        }
+
+        .main {
+            background-color: white;
+            box-shadow: rgba(50, 50, 93, 0.25)0px 2px 5px -1px, rgba(0, 0, 0, 0.3)0px 1px 3px -px;
+
+            width: 50%;
+            margin: 50px 0 0 400px;
+            align-items: center;
+            height: 170vh;
+            border-radius: 30px;
+        }
+
+        .total-heading {
+            background-color: rgb(102, 100, 100);
+            height: 90px;
+            box-shadow: rgba(50, 50, 93, 0.25)0px 2px 5px -1px, rgba(0, 0, 0, 0.3)0px 1px 3px -px;
+
+        }
+
+        label {
+            font-size: 20px;
+        }
+
+        #information {
+            border: none;
+            border-bottom: 2px solid rgb(176, 173, 173);
+        }
+
+        input,
+        select {
+            height: 40px;
+            border: none;
+            border-bottom: 2px solid rgb(176, 173, 173);
+            font-size: 15px;
+            color: rgb(101, 102, 103);
+            border-radius: 10px;
+        }
+        .reqfield{
+            color: red;
+        }
+        .heading {
+            align-items: center;
+            margin: auto;
+            padding-top: 20px;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .para {
+            align-items: center;
+            margin: auto;
+
+            color: white;
+
+            display: flex;
+            justify-content: center;
+        }
+        :focus{
+            outline: none;
+        }
+
+        .box {
+            display: grid;
+            grid-template-columns: 40% 50%;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .radio {
+            margin-right: 5px;
+        }
+
+        .empas {
+            margin-right: 30px;
+        }
+
+        #add {
+            width: 50%;
+        }
+        select option{
+            font-size: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            margin :46px 357px;
+            cursor: pointer;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="total-heading">
+            <div class="heading">
+                <h2>Client Details</h2>
+            </div>
+            <div class="para">
+                <p>enter the details of all incoming clients</p>
+            </div>
+        </div>
+        <div class="fields">
+            <div class="box">
+                <label class="cname" for="name">Client name<span class="reqfield">*</span> </label>
+                <input type="text" id="name">
+            </div>
+            <div class="box">
+                <label class="cname" for="company">Company name <span class="reqfield">*</span></label>
+                <input type="text" id="company">
+            </div>
+            <div class="box">
+                <label class="cname" for="title">Title </label>
+                <input type="text" id="title">
+            </div>
+            <div class="box">
+                <label class="cname" for="dept">Department<span class="reqfield">*</span> </label>
+                <select name="dept" id="dept">
+                    <option value="">select</option>
+                    <option value="">IT</option>
+                    <option value="">non it</option>
+                    <option value="">hr</option>
+                    <option value="">prod</option>
+                </select>
+            </div>
+
+            <div class="box">
+
+                <div>
+                    <label for="">Prefrred contact method<span class="reqfield">*</span></label>
+                </div>
+                <div class="radios">
+                    <input type="radio" class="radio" id="email"><label for="email" class="empas">Email</label>
+                    <input type="radio" class="radio" id="phone"><label for="phone">Phone</label>
+                </div>
+
+            </div>
+            <div class="box" id="company">
+                <label class="cname" for="company">Company </label>
+                <input type="text" name="" id="addr">
+                <label class="cname" for="company"> </label>
+                <input type="text" name="" id="addr">
+                <label class="cname" for="company"> </label>
+                <input type="text" name="" id="addr">
+
+            </div>
+            <div class="box">
+                <label class="cname" for="website">Company website<span class="reqfield">*</span> </label>
+                <input type="text" id="website">
+            </div>
+            <div class="box">
+                <label class="cname" for="logo">Company logo </label>
+                <input type="file" name="" id="logo">
+            </div>
+            <div class="box">
+                <label class="cname" for="hours">Working hours </label>
+                <input type="time" name="" id="hours">
+            </div>
+            <div class="box">
+                <label class="cname" for="days">Working days </label>
+                <input type="text" name="" id="days">
+            </div>
+            <div class="box">
+                <label class="cname" for="cycle">Billing cycle<span class="reqfield">*</span></label>
+                <input type="date" name="" id="cycle">
+            </div>
+            <div class="box">
+                <label class="cname" for="information">Additional information : </label>
+                <textarea name="" id="information" cols="30" rows="10"></textarea>
+            </div>
+
+        </div>
+        
+            <a href="#">Submit</a>
+        
+    </div>
+</body>
+
+</html>

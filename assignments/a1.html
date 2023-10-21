@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .intro {
+            border: 1px solid rgb(117, 111, 111);
+            height: 200px;
+            width: 100%;
+            margin-top: 20px;
+            background-color: rgb(220, 230, 230);
+        }
+
+        .skills,
+        .hobbis {
+            background-color: rgb(220, 230, 230);
+            height: 150px;
+            margin-top: 2px;
+            border: 1px solid rgb(123, 107, 107);
+        }
+
+        h1,
+        h3,
+        p,
+        a {
+            margin-bottom: 20px;
+            color: rgb(48, 22, 22);
+            margin-left: 20px;
+            width: 70%;
+        }
+
+        
+
+        ol,
+        li {
+            margin-left: 20px;
+        }
+
+        .bodyy {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+        .leftp {
+            width: 60%;
+        }
+
+        .rightp {
+            width: 40%;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 40%;
+        }
+
+        table,
+        td,
+        tr {
+            text-align: center;
+            height: 30px;
+        }
+        .card:hover .cardsidefront{
+            transform: rotateY(180deg);
+        }
+        .card:hover .cardsideback{
+            transform: rotateY(0deg);
+        }
+        .card{
+            perspective: 150rem;
+            position: relative;
+            height: 40rem;
+            max-width: 400px;
+            margin: 2rem;
+            box-shadow: none;
+            background: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="intro">
+        <h1>
+            Hi, My name is Bhaskar.
+        </h1>
+        <h3>iam from warangal district</h3>
+        <p>Lorem ipsum dolor <b>bold tag</b>, consectetur adipisicing elit. Molestias quae, nemo omnis dolores
+            dignissimos harum, natus, suscipit vel corrupti voluptas unde possimus dolorum porro explicabo in cum
+            mollitia magnam quia.</p>
+        <a href="#">know more about me link tag</a>
+    </div>
+    <div class="bodyy">
+        <div class="leftp">
+            <div class="skills">
+                <h3>Ordered list</h3>
+                <ol>
+                    <li>list 1</li>
+                    <li>list 2</li>
+                    <li>list 3</li>
+                    <li>list 4</li>
+                </ol>
+            </div>
+            <div class="hobbis">
+                <h3>Unordered list</h3>
+                <ul>
+                    <li>list 1</li>
+                    <li>list 2</li>
+                    <li>list 3</li>
+                    <li>list 4</li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightp">
+            <img src="a.png" alt="bhabhsa">
+        </div>
+    </div>
+    <table border="1px">
+        <thead>
+            <th>
+                Name
+            </th>
+            <th>
+                Age
+            </th>
+            <th>
+                hobby
+            </th>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>A1</td>
+                <td>A2</td>
+                <td>A3</td>
+            </tr>
+            <tr>
+                <td>A1</td>
+                <td>A2</td>
+                <td>A3</td>
+            </tr>
+            <tr>
+                <td>A1</td>
+                <td>A2</td>
+                <td>A3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<div class="card">
+    <div class="cardsidefront">
+        <h1>front side</h1>
+    </div>
+    <div class="cardsideback">
+        <h1>back side</h1>
+    </div>
+    
+</div>
+
+</html>

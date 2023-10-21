@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQ</title>
+    <style>
+       .linkss{
+        background-color: black;
+        padding: 50px 0px 50px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+       }
+    a{
+        text-decoration: none;
+        font-size: 25px;
+        margin-right: 50px;
+        margin-left: 100px;
+        cursor: pointer;
+        color: white;
+        
+        
+    }
+    @media  (max-width: 620px){
+        .linkss{
+            display: grid;
+        grid-template-columns: 1fr;
+        float: left;
+        background-color: blue;
+        margin-left: 0px;
+        width: 100%;
+        
+        }
+        a{
+                margin-top: 10px;
+            margin-left: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="linkss">
+            <a href="www.google.com">Google</a>
+            <a href="www.google.com">Facebook</a>
+            <a href="www.google.com">Yahoo</a>
+            <a href="www.google.com">Instagram</a>
+            <a href="www.google.com">Twitter</a>
+    </div>
+    
+</body>
+</html>

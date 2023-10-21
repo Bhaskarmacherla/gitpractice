@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .full {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            color: #20af4d;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .full label.onebox {
+
+            display: flex;
+            margin-top: 12px;
+            border: 0.5px solid rgb(209, 205, 205);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .full label.onebox .pairname {
+            width: 100%;
+        }
+
+        .discount {
+            margin-right: 20px;
+        }
+
+        .full label.onebox .circle {
+            height: 15px;
+            width: 25px;
+            background: #fdfbfb;
+            margin-left: 15px;
+            margin-top: 15px;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 0.1px solid rgb(230, 212, 212);
+        }
+
+        #first:checked~label.first,
+        #second:checked~label.second,
+        #third:checked~label.third {
+            transition: all 0.15s;
+            border: 0.2px solid rgb(113, 144, 248);
+            background-color: rgb(242, 252, 244);
+            border-radius: 7px;
+            box-shadow: 0.5px 0.5px 1px 1px rgb(86, 221, 106);
+
+        }
+
+        #first:checked~label.first .circle,
+        #second:checked~label.second .circle,
+        #third:checked~label.third .circle {
+            background-color: #249909;
+            position: relative;
+            border: px solid rgb(250, 248, 248);
+            box-shadow: 0 0 5px 2px rbga(0, 0, 0, 0.1)
+        }
+
+        .full input[type="radio"] {
+            display: none;
+        }
+
+        .mostp {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        .tables {
+            width: 100%;
+            border: none;
+        }
+
+        .dropdown {
+            width: 100px;
+            padding: 5px;
+            border-color: #dcd5d5;
+            border-radius: 5px;
+            font-size: 15px;
+
+            color: #685e5e;
+        }
+
+        table {
+
+            border-collapse: separate;
+            border-spacing: 0 10px;
+        }
+
+        .theading {
+            font-size: 17px;
+            color: #685e5e;
+            text-align: left;
+
+        }
+
+        .pairname {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 20px;
+            font-weight: bold;
+            color: #474141;
+        }
+
+        .numbers {
+            font-size: 15px;
+            color: #685e5e;
+            align-items: center;
+
+        }
+
+        .discount {
+            font-size: 20px;
+            font-weight: bold;
+            color: #685e5e;
+            width: 20%;
+            justify-content: right;
+
+        }
+
+        .fourty {
+            float: right;
+        }
+
+        .foot {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .onefoot {
+            float: left;
+            width: 100%;
+            font-family: sans-serif;
+            color: #87c095;
+            font-size: 20px;
+
+        }
+
+        * {
+            font-family: sans-serif;
+        }
+
+        .twofoot {
+
+            width: 80%;
+            margin-left: 100px;
+            font-size: 20px;
+            color: rgb(52, 39, 39);
+
+        }
+
+        .button {
+            padding: 20px 35px;
+            width: 100%;
+
+            color: white;
+            font-size: 20px;
+            background-color: rgb(26, 136, 76);
+            margin-top: 30px;
+            display: inline-block;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .box {
+            background-color: #249909;
+            width: 200px;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            display: flex;
+            transition-property: all;
+            transition-duration: 0.7s;
+            /* border-radius: 50px; */
+            animation-name: bsk;
+            animation-duration: 3s;
+            animation-iteration-count: 5;
+        }
+
+        .box:hover {
+            background-color: blue;
+            color: white;
+            border-radius: 50%;
+            content: 'circle';
+        }
+
+        .box:hover h3 {
+            font-size: 0;
+        }
+
+        .box h3 {
+            color: white;
+            align-content: center;
+
+        }
+
+        .box:hover:after {
+            content: attr(data-hover);
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        @keyframes bsk {
+            from {
+                width: 200px;
+                height: 200px;
+
+                background-color: #20af4d;
+            }
+
+            to {
+                width: 400px;
+                background-color: red;
+                height: 500px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full">
+        <div class="title"> Bundle & Save </div>
+        <input type="radio" name="radio" id="first">
+        <input type="radio" name="radio" id="second">
+        <input type="radio" name="radio" id="third">
+        <label for="first" class="onebox first">
+
+            <span class="circle"></span>
+            <div class="pairname">
+                <span> 1 pair <br>DKK 190.00</span>
+            </div>
+            <span class="discount"> 50%off</span>
+        </label>
+
+        <label for="second" class="onebox second">
+
+            <span class="circle"></span>
+            <div class="pairname">
+                <span> 2 pair <br>DKK 345.00</span>
+                <div class="tablee">
+                    <table class="tables">
+                        <th></th>
+                        <th class="theading">Size</th>
+                        <th class="theading">Color</th>
+                        <tr>
+                            <td class="numbers">#1</td>
+                            <td>
+                                <select name="" class="dropdown">
+
+                                    <option value="1">Small</option>
+                                    <option value="2">Medium</option>
+                                    <option value="3">Large</option>
+                                </select>
+
+
+                            </td>
+                            <td>
+                                <select name="" class="dropdown">
+
+                                    <option value="1">green</option>
+                                    <option value="2">Blue</option>
+                                    <option value="3">Black</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="numbers">#2</td>
+                            <td>
+                                <select name="" class="dropdown">
+
+                                    <option value="1">Small</option>
+                                    <option value="2">Medium</option>
+                                    <option value="3">Large</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="" class="dropdown">
+
+                                    <option value="1">green</option>
+                                    <option value="2">Blue</option>
+                                    <option value="3">Black</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="discount">
+                <span class="mostp">Mostpopular </span><span class="fourty">40%off</span>
+            </div>
+
+        </label>
+        <label for="third" class="onebox third">
+
+            <span class="circle"></span>
+            <div class="pairname">
+                <span> 3 pair <br>DKK 528.00</span>
+            </div>
+            <span class="discount"> 60%off</span>
+        </label>
+        <div class="foot">
+            <span class="onefoot"> Free 2 day shipping</span>
+            <span class="twofoot">Total: DKK 360.00</span>
+        </div>
+        <div class="btn">
+            <input type="button" class="button" id="" value="+ Add to cart">
+        </div>
+
+    </div>
+
+    <div class="graph">
+        <div class="box" data-hover="circle">
+            <h3>box</h3>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
